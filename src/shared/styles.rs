@@ -5,6 +5,28 @@ live_design! {
     use link::widgets::*;
     use makepad_draw::shader::std::*;
 
+    // Manrope font definitions
+    FONT_REGULAR = {
+        font_family: {
+            latin = font("crate://self/resources/Manrope-Regular.ttf", 0.0, 0.0),
+        }
+    }
+    FONT_MEDIUM = {
+        font_family: {
+            latin = font("crate://self/resources/Manrope-Medium.ttf", 0.0, 0.0),
+        }
+    }
+    FONT_SEMIBOLD = {
+        font_family: {
+            latin = font("crate://self/resources/Manrope-SemiBold.ttf", 0.0, 0.0),
+        }
+    }
+    FONT_BOLD = {
+        font_family: {
+            latin = font("crate://self/resources/Manrope-Bold.ttf", 0.0, 0.0),
+        }
+    }
+
     pub TRANSPARENT = #0000
     pub PRIMARY_COLOR = #3A7CA5
 
@@ -14,11 +36,11 @@ live_design! {
     pub MAIN_BG_COLOR_DARK = #f2f2f2
     pub CTA_BUTTON_COLOR = (PRIMARY_COLOR)
 
-    pub REGULAR_FONT = <THEME_FONT_REGULAR>{
+    pub REGULAR_FONT = <FONT_REGULAR>{
         font_size: (12)
     }
 
-    pub BOLD_FONT = <THEME_FONT_BOLD>{
+    pub BOLD_FONT = <FONT_BOLD>{
         font_size: (12)
     }
 
